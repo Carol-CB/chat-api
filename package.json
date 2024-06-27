@@ -1,0 +1,28 @@
+{
+  "name": "api-node-mongo",
+  "version": "1.0.0",
+  "description": "\"chat api\" \r #Chat API",
+  "main": "index.js",
+  "scripts": {
+    "test": "teste",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carol-CB/chat-api.git"
+  },
+  "keywords": [
+    "api"
+  ],
+  "author": "Carolina Canei Bertuol",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carol-CB/chat-api/issues"
+  },
+  "homepage": "https://github.com/Carol-CB/chat-api#readme",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0"
+  }
+}
