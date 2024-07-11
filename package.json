@@ -4,8 +4,8 @@
   "description": "\"chat api\" \r #Chat API",
   "main": "index.js",
   "scripts": {
-    "test": "teste",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/server.js"
   },
   "repository": {
     "type": "git",
