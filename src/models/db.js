@@ -13,8 +13,13 @@ async function connect(){
 }
 
 let findAll = async (collection)=>{
-const db = await connect();
-return await db.collection(collection).find().toArray();
+    const db = await connect();
+    return await db.collection(collection).find().toArray();
+}
+
+async function insertOne(collection, objeto){
+    const db = await connect();
+    return db.collection(collection).insertOne(objeto);
 }
 
 module.exports = {findAll}

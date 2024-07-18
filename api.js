@@ -17,8 +17,14 @@ app.use('/', router.get('/sobre', (req, res) => {
 }));
 
 app.use('/', router.get('/salas', async (req, res)=>{
-    const salaController = require('./controllers/salaController');
+    const salaController = require('./src/controllers/salaController');
     const resp = await salaController.get();
+    res.status(200).send(resp);
+}));
+
+app.use('/entrar', router.post('/entrar', async (req, res, next)=>{
+    const usuarioController = require('./src/controllers/usuarioController');
+    let resp = await usuarioController.entrar(req.body.nick);
     res.status(200).send(resp);
 }));
 
